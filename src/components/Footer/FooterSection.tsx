@@ -4,7 +4,7 @@ const FooterSection = () => {
   return (
     <StyledFooter>
       <div className="my-container">
-        <p>
+        <p data-aos="fade-right">
           Copytright © 2023{" "}
           <span className="font-[600]">Alowishus Delicious</span>
         </p>

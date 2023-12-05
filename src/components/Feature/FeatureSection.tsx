@@ -25,7 +25,7 @@ const FeatureSection = () => {
   return (
     <StyledFeature id="menu">
       <div className="my-container">
-        <div className="text-center mb-12">
+        <div data-aos="fade-up" className="text-center mb-12">
           <p className="text-[40px] font-bold">Explore Our Alowishus</p>
           <p className="text-[#64646A] text-[20px]">
             A drink from the ‘My Alowishus’ bottled brews range OR grab one of
@@ -34,7 +34,11 @@ const FeatureSection = () => {
         </div>
         <div className="feature-cards flex justify-between gap-6">
           {featureCards.map((item, index) => (
-            <div className="feature-card w-[400px]" key={index}>
+            <div
+              data-aos="fade-right"
+              className="feature-card w-[400px]"
+              key={index}
+            >
               <p className="text-[28px] font-bold">{item.title}</p>
               <p className="text-[20px] text-[#64646A]">{item.description}</p>
               <img
@@ -49,7 +53,7 @@ const FeatureSection = () => {
           ))}
         </div>
         <div className="feature-order flex items-center">
-          <div>
+          <div data-aos="fade-right">
             <img
               className="object-contain w-[800px] h-[400px]"
               src="img/feature-order.png"
@@ -57,26 +61,37 @@ const FeatureSection = () => {
             />
           </div>
           <div>
-            <p className="text-[35px] font-bold">Order Your Favourite Coffee</p>
-            <p className="text-[#64646A] text-[20px] my-6">
+            <p data-aos="fade-right" className="text-[35px] font-bold">
+              Order Your Favourite Coffee
+            </p>
+            <p data-aos="fade-left" className="text-[#64646A] text-[20px] my-6">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button className="primary-button">order now</button>
+            <button data-aos="fade-right" className="primary-button">
+              order now
+            </button>
           </div>
         </div>
         <div className="feature-order feature-order-second flex items-center">
           <div>
-            <p className="text-[35px] font-bold">Order Your Favourite Coffee</p>
-            <p className="text-[#64646A] text-[20px] my-6">
+            <p data-aos="fade-left" className="text-[35px] font-bold">
+              Order Your Favourite Coffee
+            </p>
+            <p
+              data-aos="fade-right"
+              className="text-[#64646A] text-[20px] my-6"
+            >
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button className="primary-button">download now</button>
+            <button data-aos="fade-right" className="primary-button">
+              download now
+            </button>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <img
               className="object-contain w-[800px] h-[400px]"
               src="img/feature-order-2.png"

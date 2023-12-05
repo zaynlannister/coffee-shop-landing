@@ -23,7 +23,7 @@ const HeaderSection = () => {
       <MobileMenu toggleMenu={toggleMenu} menuOpen={open} />
       <div className="my-container">
         <div className="flex items-center justify-between py-4">
-          <div>
+          <div data-aos="fade-right">
             <img src="/img/logo.svg" alt="logo" />
           </div>
           <div className="flex gap-6 header-nav">
@@ -46,21 +46,27 @@ const HeaderSection = () => {
         </div>
         <div className="header-content flex justify-between py-24">
           <div className="w-[50%] header-content__text">
-            <p className="text-[60px] font-bold header-content__title">
+            <p
+              data-aos="fade-down"
+              className="text-[60px] font-bold header-content__title"
+            >
               Alowishus Delicious Coffee
             </p>
-            <p className="text-[#64646A] text-[20px] my-12 header-content__description">
+            <p
+              data-aos="fade-up"
+              className="text-[#64646A] text-[20px] my-12 header-content__description"
+            >
               A drink from the ‘My Alowishus’ bottled brews range OR grab one of
               our delicious coffee’s.
             </p>
-            <div className="flex items-center gap-6">
+            <div data-aos="fade-right" className="flex items-center gap-6">
               <button className="primary-button">DOWNLOAD APP</button>
               <a className="cursor-pointer hover:underline hover:underline-offset-8">
                 SHOP COFEE
               </a>
             </div>
           </div>
-          <div className="relative header-content__img">
+          <div data-aos="fade-left" className="relative header-content__img">
             <img
               className="object-cover w-[500px] h-[500px] header-content__img-1"
               src="/img/header-bg.png"

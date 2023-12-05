@@ -5,18 +5,21 @@ const ContactSection = () => {
     <StyledContact id="contact" className="bg-[#f7f7f7] py-6">
       <div className="my-container contact flex justify-between">
         <div className="w-[50%] contact__text">
-          <img src="/img/logo.svg" alt="logo" />
-          <p className="text-[20px] text-[#64646A] mt-6">
+          <img data-aos="fade-down" src="/img/logo.svg" alt="logo" />
+          <p data-aos="fade-right" className="text-[20px] text-[#64646A] mt-6">
             We made it our mission to create community everyday and grow
             meaningful, lasting relationships with our staff, our suppliers and
             of course you, our customers.
           </p>
         </div>
         <div className="contact__images">
-          <p className="text-[40px] font-bold mb-4 contact__images-title">
+          <p
+            data-aos="fade-down"
+            className="text-[40px] font-bold mb-4 contact__images-title"
+          >
             Contact Alowishus!
           </p>
-          <div className="ml-[-12px]">
+          <div data-aos="fade-right" className="ml-[-12px]">
             <div className="flex">
               <img src="/img/email.svg" alt="email" />
               <p className="mt-2">zaynlannister@gmail.com</p>
