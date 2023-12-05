@@ -48,6 +48,42 @@ const FeatureSection = () => {
             </div>
           ))}
         </div>
+        <div className="feature-order flex items-center">
+          <div>
+            <img
+              className="object-contain w-[800px] h-[400px]"
+              src="img/feature-order.png"
+              alt="img"
+            />
+          </div>
+          <div>
+            <p className="text-[35px] font-bold">Order Your Favourite Coffee</p>
+            <p className="text-[#64646A] text-[20px] my-6">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button className="primary-button">order now</button>
+          </div>
+        </div>
+        <div className="feature-order feature-order-second flex items-center">
+          <div>
+            <p className="text-[35px] font-bold">Order Your Favourite Coffee</p>
+            <p className="text-[#64646A] text-[20px] my-6">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button className="primary-button">order now</button>
+          </div>
+          <div>
+            <img
+              className="object-contain w-[800px] h-[400px]"
+              src="img/feature-order-2.png"
+              alt="img"
+            />
+          </div>
+        </div>
       </div>
     </StyledFeature>
   );
@@ -72,6 +108,16 @@ const StyledFeature = styled.div`
 
     .feature-card {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 820px) {
+    .feature-order {
+      flex-direction: column;
+    }
+
+    .feature-order-second {
+      flex-direction: column-reverse;
     }
   }
 `;
