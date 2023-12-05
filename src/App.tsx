@@ -1,5 +1,11 @@
+import HeaderSection from "./components/Header/HeaderSection";
+
 const App = () => {
-  return <div className="my-container">App</div>;
+  return (
+    <div>
+      <HeaderSection />
+    </div>
+  );
 };
 
 export default App;

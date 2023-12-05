@@ -15,7 +15,25 @@ body {
 }
 
 .my-container {
-  width: min(1140px, 100%);
+  width: min(1180px, 100%);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+.primary-button {
+  padding: 15px 20px;
+  background-color: #1b1b1d;
+  border: 1px solid #1b1b1d;
+  color: #ffff;
+  border-radius: 30px;
+  transition: 150ms all;
+}
+
+.primary-button:hover {
+  background-color: transparent;
+  color: #1b1b1d;
 }
