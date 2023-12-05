@@ -74,7 +74,7 @@ const FeatureSection = () => {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button className="primary-button">order now</button>
+            <button className="primary-button">download now</button>
           </div>
           <div>
             <img
