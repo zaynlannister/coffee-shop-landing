@@ -1,9 +1,15 @@
+import FeatureSection from "./components/Feature/FeatureSection";
 import HeaderSection from "./components/Header/HeaderSection";
 
 const App = () => {
   return (
     <div>
-      <HeaderSection />
+      <>
+        <HeaderSection />
+      </>
+      <>
+        <FeatureSection />
+      </>
     </div>
   );
 };

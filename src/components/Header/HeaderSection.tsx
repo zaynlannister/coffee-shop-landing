@@ -81,7 +81,7 @@ const Styledheader = styled.div`
       }
 
       &__title {
-        font-size: 30px;
+        font-size: 40px;
       }
 
       &__description {
