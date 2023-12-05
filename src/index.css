@@ -9,9 +9,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   color: #1b1b1d;
   font-family: "Jost", Arial, sans-serif;
+}
+
+html.menu-open {
+  overflow-y: hidden;
 }
 
 .my-container {
@@ -20,12 +30,30 @@ body {
   padding: 0 20px;
 }
 
+.custom-link {
+  outline: none;
+  transition: opacity 0.3s;
+}
+
 .custom-link:hover {
-  text-decoration: underline;
+  opacity: 9;
+}
+
+.custom-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #1b1b1d;
+  transition: width 0.3s;
+}
+
+.custom-link:hover::after {
+  width: 100%;
 }
 
 .primary-button {
-  padding: 15px 20px;
+  padding: 10px 20px;
   background-color: #1b1b1d;
   border: 1px solid #1b1b1d;
   color: #ffff;

@@ -1,8 +1,26 @@
+import React from "react";
 import styled from "styled-components";
+import BurgerMenu from "../Burger/BurgerMenu";
+import MobileMenu from "../Burger/MobileMenu";
 
 const HeaderSection = () => {
+  const [open, setOpen] = React.useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+
+    if (open) {
+      document.body.classList.remove("menu-open");
+      document.documentElement.classList.remove("menu-open");
+    } else {
+      document.body.classList.add("menu-open");
+      document.documentElement.classList.add("menu-open");
+    }
+  };
+
   return (
-    <Styledheader className="bg-[#EEEFF1]">
+    <Styledheader id="about" className="bg-[#EEEFF1]">
+      <MobileMenu toggleMenu={toggleMenu} menuOpen={open} />
       <div className="my-container">
         <div className="flex items-center justify-between py-4">
           <div>
@@ -18,9 +36,12 @@ const HeaderSection = () => {
             <a className="custom-link" href="#contact">
               Find Us
             </a>
-            <a className="custom-link" href="#catering">
+            <a className="custom-link" href="#about">
               Alowishus Catering
             </a>
+          </div>
+          <div className="header-burger hidden">
+            <BurgerMenu toggleMenu={toggleMenu} menuOpen={open} />
           </div>
         </div>
         <div className="header-content flex justify-between py-24">
@@ -93,6 +114,9 @@ const Styledheader = styled.div`
   @media (max-width: 700px) {
     .header-nav {
       display: none;
+    }
+    .header-burger {
+      display: block;
     }
   }
 `;

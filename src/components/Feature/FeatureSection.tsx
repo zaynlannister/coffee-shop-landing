@@ -23,7 +23,7 @@ const featureCards = [
 
 const FeatureSection = () => {
   return (
-    <StyledFeature>
+    <StyledFeature id="menu">
       <div className="my-container">
         <div className="text-center mb-12">
           <p className="text-[40px] font-bold">Explore Our Alowishus</p>

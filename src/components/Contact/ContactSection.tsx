@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContactSection = () => {
   return (
-    <StyledContact className="bg-[#f7f7f7] py-6">
+    <StyledContact id="contact" className="bg-[#f7f7f7] py-6">
       <div className="my-container contact flex justify-between">
         <div className="w-[50%] contact__text">
           <img src="/img/logo.svg" alt="logo" />
